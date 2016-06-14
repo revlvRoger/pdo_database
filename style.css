@@ -3,39 +3,110 @@
     paddding: 0;
 }
 
-.wrapper {
+.container{
     width: 100%;
     margin-top: 100px;
 }
 
-.add-form {
-    border: 2px solid black;
+.wrapper {
+/*    border: 2px solid black;*/
     width: 960px;
     margin: 0 auto;
 /*    padding-left: 20px;*/
 }
+.add-form {
 
+    width: 50%;
+    padding: 20px;
+    margin-left:200px;
+    border-radius: 10px;
+    background: #dedede;
+    box-shadow: 10px 10px 5px #888888;
+    /*border-style: outset;*/
+}
 .wrapper-right {
     width: 960px;
     margin: 0 auto;
 /*    border: 2px solid black;*/
     margin-top: 50px;
-}
 
+}
+label {
+    font-weight: bold;
+}
 
 ul {
     padding: 0;
-        text-decoration: none;
-    list-style: none;
-
-}
-ul li {
-    padding: 25px;
-    margin-bottom: 5px;
     text-decoration: none;
     list-style: none;
-    background: #eaeaea;
 }
-ul li:last-child {
-    margin-bottom: 0;
+ul li {
+    padding: 40px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    list-style: none;
+    background: #b7b7b7;
+    box-shadow: 10px 10px 5px #888888;
+}
+ul li a {
+    text-decoration: none;
+    background: #aaaaaa;
+    padding: 5px 10px 5px 10px;
+    margin-right: 10px;
+}
+ul li .update {
+    color: white;
+    font-size: 18px;
+    background: #008CBA;
+    border-color: none;
+    border-radius: 5px;
+}
+ul li .update:hover {
+    background: #004d66;
+}
+ul li .delete {
+    color: white;
+    font-size: 18px;
+    background: #f44336;
+    border-color: none;
+    border-radius: 5px;
+}
+ul li .delete:hover {
+    background: #da190b;
+}
+ul li span {
+    font-size: 14pt;
+    color: #ededed;
+    font-weight: bold;
+}
+ul li p {
+    color: black;
+}
+textarea {
+    width: 100%;
+    padding-top: 15px;
+}
+input[type="text"] {
+    width: 100%;
+    height: 50px;
+
+}
+input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border-color:#64c763;
+    color: white;
+    background: #64c763;
+}
+input[type="submit"]:hover {
+background: #539e51;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+hr {
+    margin-bottom: 20px;
+    border: 1px solid black;
 }
