@@ -20,7 +20,7 @@
     padding: 20px;
     margin-left:200px;
     border-radius: 10px;
-    background: #dedede;
+    background: #cdcdcd;
     box-shadow: 10px 10px 5px #888888;
     /*border-style: outset;*/
 }
@@ -45,7 +45,7 @@ ul li {
     margin-bottom: 20px;
     text-decoration: none;
     list-style: none;
-    background: #b7b7b7;
+    background: #cdcdcd;
     box-shadow: 10px 10px 5px #888888;
 }
 ul li a {
@@ -85,10 +85,13 @@ ul li p {
 textarea {
     width: 100%;
     padding-top: 15px;
+    border: none;
 }
 input[type="text"] {
     width: 100%;
     height: 50px;
+    border: none;
+
 
 }
 input[type="submit"] {
@@ -98,9 +101,11 @@ input[type="submit"] {
     border-color:#64c763;
     color: white;
     background: #64c763;
+            font-size: 14pt;
 }
 input[type="submit"]:hover {
-background: #539e51;
+    background: #539e51;
+
 }
 h1 {
     text-align: center;

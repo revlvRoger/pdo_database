@@ -1,4 +1,5 @@
 <?php
+// require_once('lib.php');
 ?>
 
 
@@ -25,5 +26,7 @@
         </div>
     </div>
 </div>
+<?php
+?>
 </body>
 </html>

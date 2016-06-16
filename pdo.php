@@ -1,9 +1,7 @@
 
 
 <?php
-// require_once('lib.php');
-$db_connect = new PDO( 'mysql:host=localhost;dbname=todo;charset=utf8mb4', 'root', 'P@ssw0rd' );
-$db_connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+require_once('lib.php');
 ?>
 
 
@@ -37,9 +35,7 @@ $db_connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     <ul>
         <?php
         //display data
-        $statement = $db_connect->query('SELECT * FROM tasks');
-        $results = $statement->fetchAll(PDO::FETCH_ASSOC);
-        foreach( $results as $row ):
+        foreach(displayTODO() as $row ):
         ?>
             <li>
                 <?php echo "#". $row['id']?><br><br>
@@ -47,9 +43,7 @@ $db_connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                 <p><?php echo  $row['description']?></p><br><br>
                 <a class="update" href="update.php?id=<?php echo $row['id']; ?>">Update</a>
                 <a class="delete" href="delete.php?id=<?php echo $row['id']; ?>">Delete</a>
-
             </li>
-
         <?php
             endforeach;
         ?>
